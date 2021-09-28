@@ -1,2 +1,2 @@
 # DATA115
-DATA115 Project
+Home for data project
