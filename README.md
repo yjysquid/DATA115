@@ -1,6 +1,6 @@
 # DATA115
 Home for data project
-Topic: Washington state government finance
+## Topic: Washington state government finance
 
 This project aims to understand WA state's financial health.
 
