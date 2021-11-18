@@ -12,3 +12,5 @@ This project aims to understand WA state's financial health.
 <img src="url">
 "Caption:" This figure is....
 ![alternate text](image url)
+Total Revenue = General Revenue + Liquor Store Revenue + Insurance Trust Revenue
+Total Taxes = General Sales and Gross Receipts Taxes + Selective Sales and Gross Receipts Taxes + License Taxes +All Other Taxes
