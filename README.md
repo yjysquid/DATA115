@@ -9,10 +9,16 @@ This project aims to understand WA state's financial health.
 ### (2) Which resource of the revenue has the highest growth rate in the last 5 years?
 ### (3) What is the trend of the fiscal year financial balance of WA in the past 10 years? Surplus or debt? Growing or decline?
 
+## Figure 1
+
 <img src="WA_tax.png">
-"Caption:" WA state's Taxes 
+*Caption: Total Taxes are the sum of the General Sales and Gross Receipts Taxes, Selective Sales and Gross Receipts Taxes, License Taxes, and All Other Taxes.*
+
+## Figure 2
 
 ![Scatterplot of WA State's License Taxes from 2012 to2019](lic_tax.png)
+
+*The outliers happend in 2012 and 2018. The WA state government had extremely low License Tax collection in 2012, and extremely high amount in 2018.*
 
 
 *Total Revenue = General Revenue + Liquor Store Revenue + Insurance Trust Revenue*
