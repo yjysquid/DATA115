@@ -22,6 +22,8 @@ This project aims to understand WA state's financial health.
 *The outliers happend in 2012 and 2018. The WA state government had extremely low License Tax collection in 2012, and extremely high amount in 2018.*
 
 
-*Total Revenue = General Revenue + Liquor Store Revenue + Insurance Trust Revenue*
+*Total Revenue = General Revenue + Liquor Store Revenue + Untility Revenue + Insurance Trust Revenue*
+
+*General Revenue = Intergovernmental Revenue + Total Taxes + Current Charges + Miscellaneous General Revenue*
 
 *Total Taxes = General Sales and Gross Receipts Taxes + Selective Sales and Gross Receipts Taxes + License Taxes +All Other Taxes*
