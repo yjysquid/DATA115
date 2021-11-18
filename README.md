@@ -11,6 +11,9 @@ This project aims to understand WA state's financial health.
 
 <img src="WA_tax.png">
 "Caption:" WA state's Taxes 
-![WA License Taxes]<img src="lic_tax.png">
+
+![Scatterplot of WA State's License Taxes from 2012 to2019](lic_tax.png)
+
+
 *Total Revenue = General Revenue + Liquor Store Revenue + Insurance Trust Revenue*
 Total Taxes = General Sales and Gross Receipts Taxes + Selective Sales and Gross Receipts Taxes + License Taxes +All Other Taxes
