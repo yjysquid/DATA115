@@ -12,6 +12,7 @@ This project aims to understand WA state's financial health.
 ## Figure 1
 
 <img src="WA_tax.png">
+
 *Caption: Total Taxes are the sum of the General Sales and Gross Receipts Taxes, Selective Sales and Gross Receipts Taxes, License Taxes, and All Other Taxes.*
 
 ## Figure 2
@@ -22,4 +23,5 @@ This project aims to understand WA state's financial health.
 
 
 *Total Revenue = General Revenue + Liquor Store Revenue + Insurance Trust Revenue*
-Total Taxes = General Sales and Gross Receipts Taxes + Selective Sales and Gross Receipts Taxes + License Taxes +All Other Taxes
+
+*Total Taxes = General Sales and Gross Receipts Taxes + Selective Sales and Gross Receipts Taxes + License Taxes +All Other Taxes*
