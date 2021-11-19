@@ -4,18 +4,24 @@ Home for data project
 
 This project aims to understand WA state's financial health.
 
-## Questions:
-### (1) Which resource accounts for the most revenue of the state government?
-### (2) Which resource of the revenue has the highest growth rate in the last 5 years?
-### (3) What is the trend of the fiscal year financial balance of WA in the past 10 years? Surplus or debt? Growing or decline?
+## Motivation
 
-## Figure 1
+### Questions:
+#### (1) Which resource accounts for the most revenue of the state government?
+#### (2) Which resource of the revenue has the highest growth rate in the last 5 years?
+#### (3) What is the trend of the fiscal year financial balance of WA in the past 10 years? Surplus or debt? Growing or decline?
+
+## Data Process
+
+## Visualization & Analysis
+
+### Figure 1
 
 <img src="WA_tax.png">
 
 *Caption: Total Taxes are the sum of the General Sales and Gross Receipts Taxes, Selective Sales and Gross Receipts Taxes, License Taxes, and All Other Taxes.*
 
-## Figure 2
+### Figure 2
 
 ![Scatterplot of WA State's License Taxes from 2012 to2019](lic_tax.png)
 
