@@ -9,22 +9,36 @@ As a senior student with Accounting major, I have been curious about how Washing
 2. which tax category contributes to the largest portion?
 3. 
 ## Data Sources
-In this project, both Washington State government's [finances data](Raw_Data/WAgov_Finance_2012_2019.csv) and [detailed tax colleciton data](Raw_Data/WA_TaxCollectionsDetailed_2016_to_2020.csv) are obtained from US Census Bureau. According to US Census Brueau, the data is collected by a mail canvass of state government offices that are directly involved with state finance and state-administrated tax.
-The finances data contains total of 384 recordes about the government's revenues, taxes, and expenditures from 2012 to 2019.
-The detailed tax collection data provides a total of 155 recordes from 2016 to 2020, including 30 tax categories.
+There are three raw data sets located in the folder [Raw_Data](https://github.com/yjysquid/DATA115/tree/main/Raw_Data):
+1. [WAgov_Finance_2012_2019.csv](Raw_Data/WAgov_Finance_2012_2019.csv)
+2. [WA_TaxCollectionDetailed_2016_to_2020.csv](Raw_Data/WA_TaxCollectionsDetailed_2016_to_2020.csv) 
+3. [2015-stc-detailed.csv](Raw_Data/2015-stc-detailed.csv)
+
+They are all obtained from US Census Bureau.
+According to US Census Brueau, the data sets are collected by a mail canvass of state government offices that are directly involved with state finance and state-administrated tax.
 ## Data Process
-The main issue for those two datasets is the numbers are stored as text instead of numbers. 
+The main issue for those datasets is that the numbers are stored as text instead of numbers. 
 Another issue is that many columns have the same values, and those columns are not necessary for this project. For example, in Finances Dataset, the whole column of Geographic Area Name are Washington.
 
-There are two datasets, and I performed some processing steps for both data sets:
-#### (1) Finances Dataset
-1. I deleted the first row and 9 columns but only left three columns, which are Year, Meaning of Aggregate Description, and Amount.
-2. I converted the values in column Year and column Amount to Number.
-3. "X" in column Amount means incomplete information or not applicable information. I replaced "X" with "0" in the column Amount.
-#### (2) Detailed Tax Collection Dataset
-1. I deleted three columns: Geographic Area Name, Meaning of Survey Component, Meaning of Type of Government.
-2. I converted the values in column Year and column Amount Formated to Number.
-3. I ordered the data set by Aggregated Description in Descending. 
+The processing for the first 2 raw datasets are performed as following steps:
+1. Delete unncessary columns and row, and remain the three columns: Year, Meaning of Aggregate Description, and Amount.
+2. Convert the values in column Year and column Amount to Number.
+3. Replace "X" in column Amount with "0."
+Then, we will get the two datasets:
+[WAgov_2012_2019_Financial_data.csv](Processed_Data/WAgov_2012_2019_Financial_data.csv) and
+[WA_TaxDetailed_2016_to_2020_processed.csv](Processed_Data/WA_TaxDetailed_2016_to_2020_processed.csv)
+
+The processing for the third raw dataset are performed as following steps:
+1. Delete unncessary columns and row, and remain only 2 columns: Tax Type and Washington.
+2. Add a column "Year" between the two column and fill out Year column with "2015."
+3. Change column title "Tax Type" to "Meaning of Aggregate Description."
+4. Change column title "Washington" to "Amount."
+5. Replace "X" in column Amount with "0."
+6. Then, we will get the dataset:[2015-stc-tax_processed.csv](Processed_Data/2015-stc-tax_processed.csv) 
+
+1. Merge those three processed datasets into one.
+2. Remove duplicates and the records of 2012-2014 and 2020.
+3. Then, we will get the dataset: [2015-2019_processed.csv](Processed_Data/2015-2019_processed.csv)
 ## Visualization & Analysis
 
 ### Figure 1
