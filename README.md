@@ -1,11 +1,13 @@
 # DATA115: Washington State Government Finance Data
 ## Motivation
-
+As a senior student with Accounting major, I have been curious about how Washington state's tax incomes contribute to the state government's finance. In this project, I'm going to explore the finances data of Washington state government from 2015 to 2019.   
 ### Questions:
 #### (1) Which resource accounts for the most revenue of the state government?
 #### (2) Which resource of the revenue has the highest growth rate in the last 5 years?
-#### (3) What is the trend of the fiscal year financial balance of WA in the past 10 years? Surplus or debt? Growing or decline?
-
+#### (3) What is the trend of the fiscal year financial balance of WA in the past 10 years? 
+1. What percentage does taxes account for the total revenue of the state government?
+2. which tax category contributes to the largest portion?
+3. 
 ## Data Sources
 In this project, both Washington State government's [finances data](Raw_Data/WAgov_Finance_2012_2019.csv) and [detailed tax colleciton data](Raw_Data/WA_TaxCollectionsDetailed_2016_to_2020.csv) are obtained from US Census Bureau. According to US Census Brueau, the data is collected by a mail canvass of state government offices that are directly involved with state finance and state-administrated tax.
 The finances data contains total of 384 recordes about the government's revenues, taxes, and expenditures from 2012 to 2019.
