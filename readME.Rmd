@@ -1,0 +1,53 @@
+---
+title: "Homework 3 Problem 5"
+author: "Amber Yu"
+date: "The Date"
+output:
+  word_document: default
+  pdf_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Data Types
+
+R supports all of the main data types that we discussed in class during week 2. Strings in R are represented with quotation marks, before and after the object. Strings can contain letters, numbers, spaces, and punctuation. Change the my_name variable so that this code snippet prints your name.  
+
+```{r}
+library(tidyverse)
+library(ggplot2)
+
+#load data frame
+rev <- read.csv("Revenue.csv")
+tax <- read.csv("Tax.csv")
+
+#What was the trend of Revenue from 2012 to 2019?
+total_rev <- rev[1:8,]
+ggplot(total_rev,aes(x=Year,y=Amount))+geom_point()+geom_line()
+
+#This line chart shows government's income in year 2015 and 2016 decreased. I was wondering which parts of the governmental income are related to the decline. 
+
+```
+
+```{r}
+#remove rev row 1 to row 16
+rev <- rev [-1:-16,]
+
+#How does each revenue category contribute to the total revenue?
+ggplot(rev,aes(fill=Revenue,x=Year,y=Amount))+geom_bar(stat= "identity")+ggtitle("Total Revenue Breakdown")+ylab("Amount: $Million")+xlab("Year")
+
+#Insurance Trust Revenu
+```
+
+```{r}
+#remove tax row 1 to row 8
+tax <- tax [-1:-8,]
+
+#How does each Tax category contribute to the total tax?
+ggplot(tax,aes(fill=Tax,x=Year,y=Amount))+geom_bar(stat= "identity")+ggtitle("Total Tax Breakdown")+ylab("Amount: $Million")+xlab("Year")
+
+```
+
+
