@@ -4,7 +4,7 @@ As a senior student with Accounting major, I have been curious about how Washing
 ### Questions:
 #### (1) Which resource accounts for the most revenue of the state government?
 #### (2) Which resource of the revenue has the highest growth rate in the last 5 years?
-#### (3) What is the trend of the fiscal year financial balance of WA in the past 10 years? 
+#### (3) 
 1. What percentage does taxes account for the total revenue of the state government?
 2. which tax category contributes to the largest portion?
 3. 
