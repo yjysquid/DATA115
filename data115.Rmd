@@ -1,0 +1,77 @@
+---
+title: "DATA 115: Personal Data Project"
+author: "Amber Yu"
+date: "12/09/2021"
+output:
+  word_document: default
+  pdf_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Motivation
+As a senior student with a major of Accounting, I was curious about the governmental financial performance. When I assessed the financial data of Washington state government, I noticed that governmental revenues consist of many scources, such as intergovernmental revenue, general revenue, utility revenue, total taxes, and so on. Thus, through this project, I would like to find out the answers of the questions: 
+
+### What was the financial performance of Washington state government from 2012 to 2019? Did revenue and expenditure increase or decrease stably or in certain pattern? If no, which revenue resources might be responsible for it? How does each revenue resource contribute to the total revenue?
+
+  
+
+```{r}
+library(tidyverse)
+library(ggplot2)
+
+#load data frame
+total <- read.csv("Total.csv")
+
+#What was the trend of WA state government's finance from 2012 to 2019?
+
+ggplot(total,aes(x=year,y=amount,color=description))+
+  geom_point()+geom_line()+
+  ggtitle("Trend of total revenue and total expenditure from 2012 to 2019")+ylab("Amount: $Million")+xlab("Year")
+
+boxplot(total$amount~as.factor(total$description), main="Changes in total revenue and total expenditure",ylab="Amount: $Million")
+
+total_rev <- total[1:8,]
+summary(total_rev$amount)
+
+#The line chart and the boxplot both show the total revenue was not as stably growing as the total expenditures from 2012 to 2019. In the line chart, we can also see that the total revenue decreased in 2015 and 2016 and was even less than the total expenditure. 
+
+#The boxplot shows that total revenue has a larger IQR than total expenditure, indicating that total revenues spread out further. In other words, yearly total revenue wasn't growing steadily.  
+
+#I wonder which revenue resources are responsible for the decrease in 2015 and 2016.
+```
+
+```{r}
+#load dataframe Revenue.csv
+rev <- read.csv("Revenue.csv")
+
+#remove general revenue
+rev <- rev [-1:-8,]
+
+#How does each revenue resource contribute to the total revenue?
+ggplot(rev,aes(fill=Revenue.Source,x=Year,y=Amount))+geom_bar(stat= "identity")+ggtitle("Total Revenue Breakdown")+ylab("Amount: $Million")+xlab("Year")
+
+ggplot(rev,aes(x=as.factor(Revenue.Source),y=Amount))+geom_boxplot()+ggtitle("Boxplots for Revenue Sources")+ylab("Amount: $Million")+xlab("Revenue Resources")
+
+#In both stacked bar chart and boxplot, we can intuitively see that Insurance Trust Revenue had larger change in amount than other revenue sources. The stacked bar chart shows Insurance Trust Revenue had a  obvious decrease in 2015 and 2016, compared to other income categories.
+
+```
+
+```{r}
+#For further analysis: Becuase taxes account for a large portion of revenue, it would be interesting to explore the portion that contributed by taxes. 
+
+#laod dataframe Tax.csv
+tax <- read.csv("Tax.csv")
+
+#How does each Tax category contribute to the total tax?
+ggplot(tax,aes(fill=Tax.Source,x=Year,y=Amount))+geom_bar(stat= "identity")+ggtitle("Total Tax Breakdown")+ylab("Amount: $Million")+xlab("Year")
+
+ggplot(tax,aes(x=as.factor(Tax.Source),y=Amount))+geom_boxplot()+ggtitle("Boxplots for Tax Categories")+ylab("Amount: $Million")+xlab("Year")
+
+
+
+```
+
+
