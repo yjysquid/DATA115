@@ -36,28 +36,26 @@ The processing for the third raw dataset are performed as following steps:
 1. Merge those three processed datasets into one.
 2. Remove duplicates and the records of 2012-2014 and 2020.
 3. Then, we will get the dataset: [2015-2019_processed.csv](Processed_Data/2015-2019_processed.csv)
-## Visualization & Analysis
+## Visualization
 Once I started to process the data, I wondered the changes in total revenue and total expenditure from 2012 to 2019. 
 Figure 1 is a line chart that represents the trend of total revenue and total expenditure from 2012 to 2019. 
 Figure 2 includes two boxplots that represent the changes in total revenue and total expenditure indivigually from 2012 to 2019.
 Both charts show the total revenue was not as stably growing as the total expenditures over time. 
 In the line chart, we can also see that the total revenue decreased in 2015 and 2016 and was even less than the total expenditure. 
 The boxplot shows that total revenue has a larger IQR than total expenditure, indicating that total revenues spread out further. In other words, yearly total revenue wasn't growing steadily.
-### Figure 1
-<img src="image folder/line_rev_exp.png" width="500" height="300"> 
 
-*Caption: The trend of total revenue and total expenditure from 2012 to 2019.
+|*Figure 1*                                                                      |*Figure 2*                                                            |
+|--------------------------------------------------------------------------------|:--------------------------------------------------------------------:|
+|                  <img src="image folder/line_chart.png">                       |           <img src="image folder/boxplot_changes.png">               |
 
-<img src="image folder/box plot_rev_exp.png" width="400" height="300">
+## Analysis
+In order to see which revenue sources affected the decrease in the total revenue, I used stacked bar chart to gain the insight of each revenue source's contribution to the total revenue. Figure 3 is a stacked bar chart that represents the breakdown of total revenue into each revenue sources. In Figure 3, we can see that most revnue sources have steady growth except Insurance Trust Revenue. We can intuitively see that Insurance Trust Revenue had larger change in amount than other revenue sources. The stacked bar chart shows Insurance Trust Revenue had a  obvious decrease in 2015 and 2016, compared to other income categories. 
+*Figure 3*
+<img src="image folder/rev12-19.png">
+*Caption:*
 
-*Caption: The changes in total revenue and total expenditure from 2012 to 2019.
+<img src="image folder/box plot_rev12-19.png">
 
-
-### Figure 2
-
-![Scatterplot of WA State's License Taxes from 2012 to2019](lic_tax.png)
-
-*The outliers happend in 2012 and 2018. The WA state government had extremely low License Tax collection in 2012, and extremely high amount in 2018.*
 
 
 *Total Revenue = General Revenue + Liquor Store Revenue + Untility Revenue + Insurance Trust Revenue*
