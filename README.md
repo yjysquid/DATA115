@@ -38,11 +38,17 @@ The processing for the third raw dataset are performed as following steps:
 3. Then, we will get the dataset: [2015-2019_processed.csv](Processed_Data/2015-2019_processed.csv)
 ## Visualization & Analysis
 Once I started to process the data, I wondered the changes in total revenue and total expenditure from 2012 to 2019. 
-The line chart and the boxplot both show the total revenue was not as stably growing as the total expenditures from 2012 to 2019. 
+Figure 1 is a line chart that represents the trend of total revenue and total expenditure from 2012 to 2019. 
+Figure 2 includes two boxplots that represent the changes in total revenue and total expenditure indivigually from 2012 to 2019.
+Both charts show the total revenue was not as stably growing as the total expenditures over time. 
 In the line chart, we can also see that the total revenue decreased in 2015 and 2016 and was even less than the total expenditure. 
 The boxplot shows that total revenue has a larger IQR than total expenditure, indicating that total revenues spread out further. In other words, yearly total revenue wasn't growing steadily.
 ### Figure 1
-<img src="image folder/line_rev_exp.png" width="500" height="300"> <img src="image folder/box plot_rev_exp.png" width="400" height="300">
+<img src="image folder/line_rev_exp.png" width="500" height="300"> 
+
+*Caption: The trend of total revenue and total expenditure from 2012 to 2019.
+
+<img src="image folder/box plot_rev_exp.png" width="400" height="300">
 
 *Caption: The changes in total revenue and total expenditure from 2012 to 2019.
 
