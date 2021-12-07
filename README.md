@@ -1,13 +1,10 @@
 # DATA115: Washington State Government Finance Data
 ## Motivation
-As a senior student with Accounting major, I have been curious about how Washington state's tax incomes contribute to the state government's finance. In this project, I'm going to explore the finances data of Washington state government from 2015 to 2019.   
-### Questions:
-#### (1) Which resource accounts for the most revenue of the state government?
-#### (2) Which resource of the revenue has the highest growth rate in the last 5 years?
-#### (3) 
-1. What percentage does taxes account for the total revenue of the state government?
-2. which tax category contributes to the largest portion?
-3. 
+As a senior student with a major of Accounting, I was curious about the governmental financial performance. When I assessed the financial data of Washington state government, I noticed that governmental revenues consist of many scources, such as intergovernmental revenue, general revenue, utility revenue, total taxes, and so on. Thus, through this project, I would like to find out the answers of the questions: 
+1. What was the revenue performance of Washington state government from 2012 to 2019? 
+2. Did revenue increase or decrease stably or in certain pattern? If no, which revenue resources might be responsible for it? 
+3. How does each revenue resource contribute to the total revenue?
+
 ## Data Sources
 There are three raw data sets located in the folder [Raw_Data](https://github.com/yjysquid/DATA115/tree/main/Raw_Data):
 1. [WAgov_Finance_2012_2019.csv](Raw_Data/WAgov_Finance_2012_2019.csv)
@@ -40,12 +37,15 @@ The processing for the third raw dataset are performed as following steps:
 2. Remove duplicates and the records of 2012-2014 and 2020.
 3. Then, we will get the dataset: [2015-2019_processed.csv](Processed_Data/2015-2019_processed.csv)
 ## Visualization & Analysis
-
+Once I started to process the data, I wondered the changes in total revenue and total expenditure from 2012 to 2019. 
+The line chart and the boxplot both show the total revenue was not as stably growing as the total expenditures from 2012 to 2019. 
+In the line chart, we can also see that the total revenue decreased in 2015 and 2016 and was even less than the total expenditure. 
+The boxplot shows that total revenue has a larger IQR than total expenditure, indicating that total revenues spread out further. In other words, yearly total revenue wasn't growing steadily.
 ### Figure 1
+<img src="image folder/line_rev_exp.png" width="500" height="300"> <img src="image folder/box plot_rev_exp.png" width="400" height="300">
 
-<img src="WA_tax.png">
+*Caption: The changes in total revenue and total expenditure from 2012 to 2019.
 
-*Caption: Total Taxes are the sum of the General Sales and Gross Receipts Taxes, Selective Sales and Gross Receipts Taxes, License Taxes, and All Other Taxes.*
 
 ### Figure 2
 
