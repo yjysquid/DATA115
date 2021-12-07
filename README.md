@@ -30,25 +30,39 @@ Both charts show the total revenue was not as stably growing as the total expend
 In the line chart, we can also see that the total revenue decreased in 2015 and 2016 and was even less than the total expenditure. 
 The boxplot shows that total revenue has a larger IQR than total expenditure, indicating that total revenues spread out further. In other words, yearly total revenue wasn't growing steadily.
 
-|*Figure 1*                                                                      |*Figure 2*                                                            |
+|Figure 1                                                                        | Figure 2                                                             |
 |--------------------------------------------------------------------------------|:--------------------------------------------------------------------:|
 |                  <img src="image folder/line_chart.png">                       |           <img src="image folder/boxplot_changes.png">               |
 
 ## Analysis
-In order to see which revenue sources affected the decrease in the total revenue, I used stacked bar chart to gain the insight of each revenue source's contribution to the total revenue. Figure 3 is a stacked bar chart that represents the breakdown of total revenue into each revenue sources. In Figure 3, we can see that most revnue sources have steady growth except Insurance Trust Revenue. We can intuitively see that Insurance Trust Revenue had larger change in amount than other revenue sources. The stacked bar chart shows Insurance Trust Revenue had a  obvious decrease in 2015 and 2016, compared to other income categories. 
-*Figure 3*
+In order to see which revenue sources affected the decrease in the total revenue in 2015 and 2016, I used a stacked bar chart to gain insight into each revenue source's contribution to the total revenue. Figure 3 represents the breakdown of total revenue into each revenue source. We can see that most revenue sources had steady growth except Insurance Trust Revenue, which decreased in 2015 and 2016. 
+
+#### Figure 3.
 <img src="image folder/rev12-19.png">
-*Caption:*
 
-<img src="image folder/box plot_rev12-19.png">
+I further used boxplot to see the distrubution of each revenue source over time. In Figure 4, we can intuitively see that Insurance Trust Revenue had the largest IQR compared to other revenue sources. This indicates that Insurance Trust Revenue fluctuate overtime and may have a larger deviation than other sources. 
 
+#### Figure 4.
+<img src="image folder/boxplot_rev_src.png">
 
+Though liquor store revenue has an outlier in the boxplot, its amount, as shown in Table 1 is not large enough to affect total revenue. 
+#### Table 1. Liquor Store Revenue from 2012 to 2019
+|Year|Liquor Store Revenue|
+|----|:------------------:|
+|2012|$612106             |
+|2013|       0            | 
+|2014|       0            | 
+|2015|       0            | 
+|2016|       0            | 
+|2017|       X            |   
+|2018|       X            |    
+|2019|       X            |
 
-*Total Revenue = General Revenue + Liquor Store Revenue + Untility Revenue + Insurance Trust Revenue*
+*Data extracted from raw dataset [WAgov_Finance_2012_2019.csv](Raw_Data/WAgov_Finance_2012_2019.csv). "X" means data not available. Amount in $ million.*
 
-*General Revenue = Intergovernmental Revenue + Total Taxes + Current Charges + Miscellaneous General Revenue*
-
-*Total Taxes = General Sales and Gross Receipts Taxes + Selective Sales and Gross Receipts Taxes + License Taxes +All Other Taxes*
+## Conclusion
+Compared to steadily increasing expenditure, the Washington state government's total revenue fluctuates due to fluctuating Insurance Trust Revenue.
+Total revenue consists of 7 primary sources: Intergovernmental Revenue, Utility Revenue, Liquor Store Revenue, Total Taxes, Insurance Trust Revenue, Current Charges, and Miscellaneous General Revenue. Insurance Trust Revenue was the main source that affected the decrease in total revenue in 2015 and 2016. Utility Revenue and Liquor Store Revenue account for tiny portions that don't really affect the fluctuation of the total revenue. Total Taxes accounts for the most significant part of the total revenue. It also has stable growth, so I would have liked to carry out additional analyses to extend this analysis.
 
 ## References
-
+US Census Bureau.(2021). *State Government Finances: US and States: 2012 - 2019.* US Census Bureau:https://data.census.gov/cedsci/table?q=Washington%20state&t=State%20Government%20Finances&tid=GOVSTIMESERIES.GS00SG01&hidePreview=true
